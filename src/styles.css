@@ -1,0 +1,101 @@
+:root {
+  --eco-green: #1f7a63;
+  --eco-green-dark: #155a49;
+  --eco-light: #e6f2ee;
+  --eco-accent: #8fd3c1;
+  --eco-text: #1c2b27;
+  --eco-muted: #6b7f78;
+  --eco-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+  background-color: var(--eco-light);
+  color: var(--eco-text);
+}
+
+.app {
+  max-width: 880px;
+  margin: 40px auto;
+  padding: 32px;
+  background: var(--eco-white);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--eco-green);
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--eco-muted);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--eco-green-dark);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--eco-accent);
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--eco-green);
+  box-shadow: 0 0 0 3px rgba(31, 122, 99, 0.15);
+}
+
+button {
+  background: var(--eco-green);
+  color: var(--eco-white);
+  border: none;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: var(--eco-green-dark);
+  transform: translateY(-1px);
+}
+
+.result {
+  margin-top: 32px;
+  padding: 24px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    var(--eco-green),
+    var(--eco-accent)
+  );
+  color: var(--eco-white);
+}
+
+.result strong {
+  font-size: 24px;
+  display: block;
+  margin-top: 8px;
+}
